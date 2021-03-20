@@ -54,7 +54,7 @@
 ## Compatibility
 * It is developed for the integration of the OpenCV artificial vision library in its version 4.3.0
 * It is compatible with Android and iOS.
-* Easy integration with popular flutter packages like [image_picker](https://pub.dev/packages/image_picker) was kept in mind, to process images from gallery or camera, you can see the implementation example [here](example).
+* Easy integration with popular flutter packages like [image_picker](https://pub.dev/packages/image_picker) was kept in mind, to process images from gallery or camera, you can see the implementation example [here](https://pub.dev/packages/opencv_4/example), in this case you need to configure the flutter project with [Nullsafety](#how-to-use)..
 * The implemented OpenCV modules are the following:
   * __Image Processing__
     * Image Filtering
@@ -148,6 +148,12 @@ defaultConfig {
 2. If you are going to work with the asset path, flutter does not require permissions in Android and iOS.
 3. If you want to work with images from URLs, no configuration is required.
 4. If the [image_picker](https://pub.dev/packages/image_picker) package is to be used to work with images from the camera and gallery, follow your permission settings for [Android and iOS](https://pub.dev/packages/image_picker#installation).
+5. `Nullsafety` If you are going to test the [example](https://pub.dev/packages/opencv_4/example) you need to configure `pubspect.yaml`
+
+```yaml
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+```
 
 
 ## Classes
