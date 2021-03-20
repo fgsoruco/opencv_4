@@ -104,7 +104,7 @@ Adicione isso ao arquivo `pubspec.yaml` do seu projeto:
 
 ```yaml
 dependencies:
-  opencv_4: ^0.0.1-nullsafety.1
+  opencv_4: ^0.0.1-nullsafety.2
 ```
 
 ### 2. Instalar

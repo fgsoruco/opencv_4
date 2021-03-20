@@ -110,7 +110,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  opencv_4: ^0.0.1-nullsafety.1
+  opencv_4: ^0.0.1-nullsafety.2
 ```
 
 ### 2. Install it

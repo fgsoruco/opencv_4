@@ -1,6 +1,6 @@
 name: opencv_4
 description: A flutter package project which contains a collection of OpenCV modules.
-version: 0.0.1-nullsafety.1
+version: 0.0.1-nullsafety.2
 homepage: https://github.com/fgsoruco/opencv_4
 
 environment:
