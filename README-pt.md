@@ -10,8 +10,8 @@
       alt="Platform" />
   </a>
   <a href="https://pub.dartlang.org/packages/opencv_4">
-    <img src="https://github.com/fgsoruco/opencv_4/blob/main/display/nullsafety-0.0.1.png?raw=true"
-      alt="Platform" />
+    <img src="https://github.com/fgsoruco/opencv_4/blob/main/display/nullsafety.png?raw=true"
+      alt="Nullsafety" />
   </a>
   <a href="https://pub.dartlang.org/packages/opencv_4">
     <img src="https://github.com/fgsoruco/opencv_4/blob/main/display/pub-version.png?raw=true"
@@ -92,9 +92,9 @@
   * `Cv2.ctvColor` 
   * `Cv2.COLOR_BGR2GRAY`
 
-## Em breve
+<!-- ## Em breve
 * Implementação de mais módulos OpenCV, estou trabalhando nisso.
-* Processamento de vídeos e gifs animados, estou trabalhando nisso.
+* Processamento de vídeos e gifs animados, estou trabalhando nisso. -->
 
 # Instalando
 
@@ -104,7 +104,7 @@ Adicione isso ao arquivo `pubspec.yaml` do seu projeto:
 
 ```yaml
 dependencies:
-  opencv_4: ^0.0.1-nullsafety.2
+  opencv_4: ^1.0.0
 ```
 
 ### 2. Instalar
