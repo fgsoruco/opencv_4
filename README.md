@@ -1,5 +1,3 @@
-<p align="center"><img src="https://github.com/fgsoruco/opencv_4/blob/main/display/cover_1.gif?raw=true"/></p>
-
 <h1 align="center">OpenCV_4</h1>
 
 <p align="center">This package contains the implementation of OpenCV modules, the version used is 4.3.0 for both Android and iOS platforms.</p><br>
@@ -21,10 +19,6 @@
   <a href="https://opensource.org/licenses/BSD-3-Clause">
     <img src="https://github.com/fgsoruco/opencv_4/blob/main/display/animated-bsd.png?raw=true"
       alt="License: BSD-3-Clause" />
-  </a>
-  <a href="https://paypal.me/fgsoruco">
-    <img src="https://github.com/fgsoruco/opencv_4/blob/main/display/donate.png?raw=true"
-      alt="Donate" />
   </a>
 </p><br>
 <p align="center">
@@ -432,12 +426,6 @@ Uint8List _byte = await Cv2.applyColorMap(
 
 ## Bugs or Requests
 Please file feature requests and bugs at the [issue tracker](https://github.com/fgsoruco/opencv_4/issues).
-
-
-## Donate
-To give you a better solution.
-
-[![ko-fi](https://github.com/fgsoruco/opencv_4/blob/main/display/donate-coffee.png?raw=true)](https://paypal.me/fgsoruco)
 
 * `BTC`: bc1qhy5uer94d4xvp2wgtfg5l6s6jk8gwj6d0ufqvh
 * `BNB`: bnb17z7dqeeyrkhq2l9mx6p3hg6ewvshrpkqqzcpr9
