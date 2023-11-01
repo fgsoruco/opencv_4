@@ -1,12 +1,11 @@
 import 'dart:io';
-import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:opencv_4/factory/pathfrom.dart';
-import 'package:opencv_4/opencv_4.dart';
 //uncomment when image_picker is installed
 import 'package:image_picker/image_picker.dart';
+import 'package:opencv_4/factory/pathfrom.dart';
+import 'package:opencv_4/opencv_4.dart';
 
 void main() {
   runApp(MyApp());
@@ -112,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   _testFromCamera() async {
     //uncomment when image_picker is installed
-    final pickedFile = await picker.getImage(source: ImageSource.camera);
+    final pickedFile = await picker.pickImage(source: ImageSource.camera);
     _image = File(pickedFile!.path);
     testOpenCV(
       pathFrom: CVPathFrom.GALLERY_CAMERA,
@@ -129,7 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   _testFromGallery() async {
     //uncomment when image_picker is installed
-    final pickedFile = await picker.getImage(source: ImageSource.gallery);
+    final pickedFile = await picker.pickImage(source: ImageSource.gallery);
     _image = File(pickedFile!.path);
     testOpenCV(
       pathFrom: CVPathFrom.GALLERY_CAMERA,
@@ -193,9 +192,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             child: Text('test assets'),
                             onPressed: _testFromAssets,
                             style: TextButton.styleFrom(
-                              primary: Colors.white,
+                              foregroundColor: Colors.white,
                               backgroundColor: Colors.teal,
-                              onSurface: Colors.grey,
+                              disabledForegroundColor:
+                                  Colors.grey.withOpacity(0.38),
                             ),
                           ),
                         ),
@@ -205,9 +205,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             child: Text('test url'),
                             onPressed: _testFromUrl,
                             style: TextButton.styleFrom(
-                              primary: Colors.white,
+                              foregroundColor: Colors.white,
                               backgroundColor: Colors.teal,
-                              onSurface: Colors.grey,
+                              disabledForegroundColor:
+                                  Colors.grey.withOpacity(0.38),
                             ),
                           ),
                         ),
@@ -217,9 +218,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             child: Text('test gallery'),
                             onPressed: _testFromGallery,
                             style: TextButton.styleFrom(
-                              primary: Colors.white,
+                              foregroundColor: Colors.white,
                               backgroundColor: Colors.teal,
-                              onSurface: Colors.grey,
+                              disabledForegroundColor:
+                                  Colors.grey.withOpacity(0.38),
                             ),
                           ),
                         ),
@@ -229,9 +231,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             child: Text('test camara'),
                             onPressed: _testFromCamera,
                             style: TextButton.styleFrom(
-                              primary: Colors.white,
+                              foregroundColor: Colors.white,
                               backgroundColor: Colors.teal,
-                              onSurface: Colors.grey,
+                              disabledForegroundColor:
+                                  Colors.grey.withOpacity(0.38),
                             ),
                           ),
                         ),
